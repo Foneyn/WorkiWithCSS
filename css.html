@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки пользователей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-content h3 {
+            margin: 0 0 10px;
+        }
+        .card-content p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="User Photo">
+        <div class="card-content">
+            <h3>Иван Иванов</h3>
+            <p>Email: ivan.ivanov@example.com</p>
+            <p>Дата рождения: 12.04.1985</p>
+            <p>Город: Москва</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="User Photo">
+        <div class="card-content">
+            <h3>Анна Смирнова</h3>
+            <p>Email: anna.smirnova@example.com</p>
+            <p>Дата рождения: 23.07.1990</p>
+            <p>Город: Санкт-Петербург</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="User Photo">
+        <div class="card-content">
+            <h3>Петр Петров</h3>
+            <p>Email: petr.petrov@example.com</p>
+            <p>Дата рождения: 05.11.1982</p>
+            <p>Город: Казань</p>
+        </div>
+    </div>
+
+</body>
+</html>
